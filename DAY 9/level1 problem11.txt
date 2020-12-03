@@ -1,0 +1,23 @@
+'''Write a python function which accepts a sentence and returns a list in which first value is the count of upper case letters and second value is the count of lower case letters in the sentence. Ignore spaces, numbers and other special characters if any.
+
+Sample Input		Expected Output
+Hello world!		[1,9]
+Welcome to Mysore	[2,13]'''
+
+#PF-Prac-11
+def find_upper_and_lower(sentence):
+    upper,lower=0,0
+    l=[]
+    for i in sentence:
+        if(65<=ord(i)<=90):
+            upper+=1
+        elif(97<=ord(i)<=122):
+            lower+=1
+    l.append(upper)
+    l.append(lower)
+    #start writing your code here
+       
+    return l
+
+sentence="Come Here"
+print(find_upper_and_lower(sentence))

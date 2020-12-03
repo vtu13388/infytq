@@ -1,0 +1,26 @@
+'''Write a python function which accepts a sentence and finds the number of letters and digits in the sentence.
+It should return a list in which the first value should be letter count and second value should be digit count. Ignore the spaces or any other special character in the sentence.
+
+Sample Input	Expected Output
+Infosys 123	[7,3]
+ABCEFG		[6,0]'''
+
+#PF-Prac-5
+def count_digits_letters(sentence):
+    result_list=[]
+    alpha=0
+    num=0
+    for i in sentence:
+        if(48<=ord(i)<=57):
+            num+=1
+        elif(95<=ord(i)<=122 or 65<=ord(i)<=90):
+            alpha+=1
+    result_list.append(alpha)
+    result_list.append(num)
+    #start writing your code here
+
+    
+    return result_list
+
+sentence="Infosys Mysore 570027"
+print(count_digits_letters(sentence))
