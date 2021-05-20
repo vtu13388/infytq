@@ -1,0 +1,12 @@
+import turtle           # allows us to use the turtles library
+wn = turtle.Screen()    # creates a graphics window
+wn.setup(500,500)       # set window dimension
+
+alex = turtle.Turtle()  # create a turtle named alex
+alex.shape("turtle")    # alex looks like a turtle
+l=['green','blue','red']
+for i in l:
+    alex.color(i)
+    for j in range(0,5):
+        alex.circle(20*j)
+    alex.right(120)
