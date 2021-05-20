@@ -1,0 +1,25 @@
+'''Jack (24 years old) and Jill (27 years old) are two employees working in a multi-national company. 
+They draw salaries 30000 and 40000 respectively.
+Write a Python program to implement the class chosen with its attributes. Also,
+1.represent Jack and Jill as objects of the class chosen
+2.initialize their attributes and
+3.display their details
+4.Create a parameterless constructor in which create the attributes with None'''
+
+#OOPR-Exer-3
+#Start writing your code here
+class Employee:
+    def __init__(self):
+        self.age=None
+        self.salary=None
+        self.name=None
+jack=Employee()
+jack.age=24
+jack.salary=30000
+jack.name='jack'
+jill=Employee()
+jill.age=27
+jill.salary=40000
+jill.name='jill'
+print(jack.name,jack.salary,jack.age)
+print(jill.name,jill.salary,jill.age)
